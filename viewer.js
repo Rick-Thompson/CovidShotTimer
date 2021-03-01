@@ -95,7 +95,13 @@ function updateclocks() {
             
             document.getElementsByTagName("span")[u - 1].innerHTML = "Finished";
             document.getElementsByTagName("span")[u - 1].style.setProperty('background-color', 'lightgreen');
-        }
+        };
+        if (minutes == 0 && seconds == 0) {
+            var msg = new SpeechSynthesisUtterance();
+            msg.text = "Number " + u + " can now leave";
+            window.speechSynthesis.speak(msg);
+            console.log("speak");
+        };
     }
 
 
