@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="controller.css" rel="stylesheet">
+    <script src="paho-mqtt.js"></script>
+    <script src="controller.js"></script>
+    <title>Controller</title>
+</head>
+<body>
+    <div>Timers in Minutes</div>
+    <div class="control">#01 <input type="text" size="3" value="17"> <button id="r1">Reset</button></div>
+    <div class="control">#02 <input type="text" size="3" value="17"> <button id="r2">Reset</button></div>
+    <div class="control">#03 <input type="text" size="3" value="17"> <button id="r3">Reset</button></div>
+    <div class="control">#04 <input type="text" size="3" value="17"> <button id="r4">Reset</button></div>
+    <div class="control">#05 <input type="text" size="3" value="17"> <button id="r5">Reset</button></div>
+    <div class="control">#06 <input type="text" size="3" value="17"> <button id="r6">Reset</button></div>
+    <div class="control">#07 <input type="text" size="3" value="17"> <button id="r7">Reset</button></div>
+    <div class="control">#08 <input type="text" size="3" value="17"> <button id="r8">Reset</button></div>
+    <div class="control">#09 <input type="text" size="3" value="17"> <button id="r9">Reset</button></div>
+    <div class="control">#10 <input type="text" size="3" value="17"> <button id="r10">Reset</button></div>
+    <div class="control">#11 <input type="text" size="3" value="17"> <button id="r11">Reset</button></div>
+    <div class="control">#12 <input type="text" size="3" value="17"> <button id="r12">Reset</button></div>
+    <div class="control">#13 <input type="text" size="3" value="17"> <button id="r13">Reset</button></div>
+    <div class="control">#14 <input type="text" size="3" value="17"> <button id="r14">Reset</button></div>
+    <div class="control">#15 <input type="text" size="3" value="17"> <button id="r15">Reset</button></div>
+    <div class="control">#16 <input type="text" size="3" value="17"> <button id="r16">Reset</button></div>
+    <div class="control">#17 <input type="text" size="3" value="17"> <button id="r17">Reset</button></div>
+    <div class="control">#18 <input type="text" size="3" value="17"> <button id="r18">Reset</button></div>
+    <div class="control">#19 <input type="text" size="3" value="17"> <button id="r19">Reset</button></div>
+    <div class="control">#20 <input type="text" size="3" value="17"> <button id="r20">Reset</button></div>
+    <div class="control">#21 <input type="text" size="3" value="17"> <button id="r21">Reset</button></div>
+    <div class="control">#22 <input type="text" size="3" value="17"> <button id="r22">Reset</button></div>
+    <div class="control">#23 <input type="text" size="3" value="17"> <button id="r23">Reset</button></div>
+    <div class="control">#24 <input type="text" size="3" value="17"> <button id="r24">Reset</button></div>
+    <div class="control">#25 <input type="text" size="3" value="17"> <button id="r25">Reset</button></div>
+    <div class="control">#26 <input type="text" size="3" value="17"> <button id="r26">Reset</button></div>
+    <div class="control">#27 <input type="text" size="3" value="17"> <button id="r27">Reset</button></div>
+    <div class="control">#28 <input type="text" size="3" value="17"> <button id="r28">Reset</button></div>
+    <div class="control">#29 <input type="text" size="3" value="17"> <button id="r29">Reset</button></div>
+    <div class="control">#30 <input type="text" size="3" value="17"> <button id="r30">Reset</button></div>
+    <div class="control">#31 <input type="text" size="3" value="17"> <button id="r31">Reset</button></div>
+    <div class="control">#32 <input type="text" size="3" value="17"> <button id="r32">Reset</button></div>
+    <div class="control">#33 <input type="text" size="3" value="17"> <button id="r33">Reset</button></div>
+    <div class="control">#34 <input type="text" size="3" value="17"> <button id="r34">Reset</button></div>
+    <div class="control">#35 <input type="text" size="3" value="17"> <button id="r35">Reset</button></div>
+    <div class="control">#36 <input type="text" size="3" value="17"> <button id="r36">Reset</button></div>
+    <div class="control">#37 <input type="text" size="3" value="17"> <button id="r37">Reset</button></div>
+    <div class="control">#38 <input type="text" size="3" value="17"> <button id="r38">Reset</button></div>
+    <div class="control">#39 <input type="text" size="3" value="17"> <button id="r39">Reset</button></div>
+    <div class="control">#40 <input type="text" size="3" value="17"> <button id="r40">Reset</button></div>
+    <div class="control">#41 <input type="text" size="3" value="17"> <button id="r41">Reset</button></div>
+    <div class="control">#42 <input type="text" size="3" value="17"> <button id="r42">Reset</button></div>
+    <div class="control">#43 <input type="text" size="3" value="17"> <button id="r43">Reset</button></div>
+    <div class="control">#44 <input type="text" size="3" value="17"> <button id="r44">Reset</button></div>
+    <div class="control">#45 <input type="text" size="3" value="17"> <button id="r45">Reset</button></div>
+    <div class="control">#46 <input type="text" size="3" value="17"> <button id="r46">Reset</button></div>
+    <div class="control">#47 <input type="text" size="3" value="17"> <button id="r47">Reset</button></div>
+    <div class="control">#48 <input type="text" size="3" value="17"> <button id="r48">Reset</button></div>
+    <div class="control">#49 <input type="text" size="3" value="17"> <button id="r49">Reset</button></div>
+    <div class="control">#50 <input type="text" size="3" value="17"> <button id="r50">Reset</button></div>
+    <div class="control">#51 <input type="text" size="3" value="17"> <button id="r51">Reset</button></div>
+    <div class="control">#52 <input type="text" size="3" value="17"> <button id="r52">Reset</button></div>
+    <div class="control">#53 <input type="text" size="3" value="17"> <button id="r53">Reset</button></div>
+    <div class="control">#54 <input type="text" size="3" value="17"> <button id="r54">Reset</button></div>
+    <div class="control">#55 <input type="text" size="3" value="17"> <button id="r55">Reset</button></div>
+    <div class="control">#56 <input type="text" size="3" value="17"> <button id="r56">Reset</button></div>
+    <div class="control">#57 <input type="text" size="3" value="17"> <button id="r57">Reset</button></div>
+    <div class="control">#58 <input type="text" size="3" value="17"> <button id="r58">Reset</button></div>
+    <div class="control">#59 <input type="text" size="3" value="17"> <button id="r59">Reset</button></div>
+    <div class="control">#60 <input type="text" size="3" value="17"> <button id="r60">Reset</button></div>
+    <div class="control">#61 <input type="text" size="3" value="17"> <button id="r61">Reset</button></div>
+    <div class="control">#62 <input type="text" size="3" value="17"> <button id="r62">Reset</button></div>
+    <div class="control">#63 <input type="text" size="3" value="17"> <button id="r63">Reset</button></div>
+    <div class="control">#64 <input type="text" size="3" value="17"> <button id="r64">Reset</button></div>
+    <div class="control">#65 <input type="text" size="3" value="17"> <button id="r65">Reset</button></div>
+    <div class="control">#66 <input type="text" size="3" value="17"> <button id="r66">Reset</button></div>
+    <div class="control">#67 <input type="text" size="3" value="17"> <button id="r67">Reset</button></div>
+    <div class="control">#68 <input type="text" size="3" value="17"> <button id="r68">Reset</button></div>
+    <div class="control">#69 <input type="text" size="3" value="17"> <button id="r69">Reset</button></div>
+    <div class="control">#70 <input type="text" size="3" value="17"> <button id="r70">Reset</button></div>
+    <div class="control">#71 <input type="text" size="3" value="17"> <button id="r71">Reset</button></div>
+    <div class="control">#72 <input type="text" size="3" value="17"> <button id="r72">Reset</button></div>
+    <div class="control">#73 <input type="text" size="3" value="17"> <button id="r73">Reset</button></div>
+    <div class="control">#74 <input type="text" size="3" value="17"> <button id="r74">Reset</button></div>
+    <div class="control">#75 <input type="text" size="3" value="17"> <button id="r75">Reset</button></div>
+    <div class="control">#76 <input type="text" size="3" value="17"> <button id="r76">Reset</button></div>
+    <div class="control">#77 <input type="text" size="3" value="17"> <button id="r77">Reset</button></div>
+    <div class="control">#78 <input type="text" size="3" value="17"> <button id="r78">Reset</button></div>
+    <div class="control">#79 <input type="text" size="3" value="17"> <button id="r79">Reset</button></div>
+    <div class="control">#80 <input type="text" size="3" value="17"> <button id="r80">Reset</button></div>
+    <div class="control">#81 <input type="text" size="3" value="17"> <button id="r81">Reset</button></div>
+    <div class="control">#82 <input type="text" size="3" value="17"> <button id="r82">Reset</button></div>
+    <div class="control">#83 <input type="text" size="3" value="17"> <button id="r83">Reset</button></div>
+    <div class="control">#84 <input type="text" size="3" value="17"> <button id="r84">Reset</button></div>
+    <div class="control">#85 <input type="text" size="3" value="17"> <button id="r85">Reset</button></div>
+    <div class="control">#86 <input type="text" size="3" value="17"> <button id="r86">Reset</button></div>
+    <div class="control">#87 <input type="text" size="3" value="17"> <button id="r87">Reset</button></div>
+    <div class="control">#88 <input type="text" size="3" value="17"> <button id="r88">Reset</button></div>
+    <div class="control">#89 <input type="text" size="3" value="17"> <button id="r89">Reset</button></div>
+    <div class="control">#90 <input type="text" size="3" value="17"> <button id="r90">Reset</button></div>
+    <div class="control">#91 <input type="text" size="3" value="17"> <button id="r91">Reset</button></div>
+    <div class="control">#92 <input type="text" size="3" value="17"> <button id="r92">Reset</button></div>
+    <div class="control">#93 <input type="text" size="3" value="17"> <button id="r93">Reset</button></div>
+    <div class="control">#94 <input type="text" size="3" value="17"> <button id="r94">Reset</button></div>
+    <div class="control">#95 <input type="text" size="3" value="17"> <button id="r95">Reset</button></div>
+    <div class="control">#96 <input type="text" size="3" value="17"> <button id="r96">Reset</button></div>
+    <div class="control">#97 <input type="text" size="3" value="17"> <button id="r97">Reset</button></div>
+    <div class="control">#98 <input type="text" size="3" value="17"> <button id="r98">Reset</button></div>
+    <div class="control">#99 <input type="text" size="3" value="17"> <button id="r99">Reset</button></div>
+    <div class="control">#100 <input type="text" size="3" value="17"> <button id="r100">Reset</button></div>
+
+
+</body>
+</html>
