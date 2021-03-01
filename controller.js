@@ -114,6 +114,7 @@ client.onConnectionLost = function (responseObject) {
     console.log("Connection Lost: " + responseObject.errorMessage);
     client.connect({
         onSuccess: onConnect,
+		useSSL: true,
         userName: username,
         password: password,
         mqttVersion: 3
@@ -133,6 +134,7 @@ function onConnect() {
 // Connect the client, providing an onConnect callback
 client.connect({
     onSuccess: onConnect,
+	useSSL: true,
     userName: username,
     password: password,
     mqttVersion: 3
