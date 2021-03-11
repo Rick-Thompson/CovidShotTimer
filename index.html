@@ -9,37 +9,50 @@
     <meta name="author" content="">
 
     <link rel="stylesheet" href="style.css">
+    <script src="paho-mqtt.js"></script>
     <script src="script.js"></script>
 
 </head>
 
 <body>
-    <div>
+    <header>
+        Covid Allergic Reaction Timer
+    </header>
+    <section id="pages">
+        <span>
+            <a class="pg" href="controller.html">controller</a>
+        </span>
+        <span>
+            <a class="pg" href="viewer.html">viewer</a>
+        </span>
+    </section>    
+    <main>
         <p>
             Username: <input id="user" type="text">
         </p>
         <p>
             Password: <input id="pass" type="password">
         </p>
-        <button id="save">Save</button> <small><small><small><small>Once you save your information you don't have to type it again.</small></small></small></small>
-    </div>
-    <hr>
-    <div>
+        <button id="save">Save</button> <br>
+        <output id="out">Please type your information in and hit save.</output>
         <p>
-            <a href="controller.html">controller</a>
+            Once your information is saved it will be used on the other pages.
+        </p>
+
+    </main>
+    <aside>
+        <p>
+            This app was set up to help covid vaccine clinics keep track of when people have finished their 15 minute wait. It consists of a controller page that can be used by any number of people at once. The viewer page is designed to be shown on a 1920x1080 or 3840x2160 screen. Once the timer is finished it will announce 'number XX is free to go', don't forget to turn off sleep on the computer so it will stay awake and running.
         </p>
         <p>
-            <a href="viewer.html">viewer</a>
-        </p>
-    </div>
-    <hr>
-    <div>
-        <p>
-            This app was set up to help covid vaccine clinics keep track of when people have finished their 15 minute wait.
+            This app was built with the idea that at the start of the line each person gets a ticket from a two digit ticket roll dispenser such as this one from <a href="https://amzn.to/30wqOO5">Amazon</a>. As each person gets their shot the person giving the shot can hit reset on the controller page then send them to the waiting room. Once their time is up the viewer page shown on a TV in the waiting area will announce they are free to go.
         </p>
         <p>
-            If any one wants to use this app please email me and I can create an account for you to use.
+            If any one wants to use this app please email me and I can create an account for you to use. Optionally you can host your own mqtt server for each client to connect to to synchronize the clocks across all clients. If you need help customizing this app for your specific needs please feel free to contact me with any questions. My email is rickt at mantaproject.com.
         </p>
-    </div>
+        <p>
+            Licensed under the AGPL 3 License.
+        </p>
+    </aside>
 </body>
 </html>

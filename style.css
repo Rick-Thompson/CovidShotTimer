@@ -1,3 +1,50 @@
-div {
-    font-size:2em;
+body {
+    font-size: 2em;
+    background-color: white;
+    color: #1a2238;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    padding: 5px;
+    font-size: 2em;
+    text-align: center;
+    color: #ff6a3d;
+}
+
+section {
+    padding: 5px;
+    margin: 25px;
+}
+
+    section span {
+        border: solid;
+        border-radius: 7px;
+        padding: 10px;
+        margin: 25px;
+        background-color: #9daaf2;
+    }
+
+a.pg {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    padding: 5px;
+    border-bottom: 5px solid #f4db7d;
+}
+
+aside {
+    padding: 15px;
+}
+
+button {
+    font-size: 1em;
+    margin-left: 5em;
+}
+
+input {
+    font-size:1em;
 }
